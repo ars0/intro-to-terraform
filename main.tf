@@ -3,13 +3,13 @@
 # This template uses runs a simple "Hello, World" web server on a single EC2 Instance
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-variable "aws_access_key" {
-  type = "string"
-}
+#variable "aws_access_key" {
+#  type = "string"
+#}
 
-variable "aws_secret_key" {
-  type = "string"
-}
+#variable "aws_secret_key" {
+#  type = "string"
+#}
 
 # ------------------------------------------------------------------------------
 # CONFIGURE OUR AWS CONNECTION
@@ -17,8 +17,8 @@ variable "aws_secret_key" {
 
 provider "aws" {
   region = "us-east-1"
-  access_key = "${var.aws_access_key}"
-  secret_key = "${var.aws_secret_key}"
+#  access_key = "${var.aws_access_key}"
+#  secret_key = "${var.aws_secret_key}"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
